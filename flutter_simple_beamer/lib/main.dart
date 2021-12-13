@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       routeInformationParser: BeamerParser(),
       routerDelegate: BeamerDelegate(
         locationBuilder: (routeInformation, _) =>
-            HomeLocation(routeInformation),
+            BeamerLocation(routeInformation),
       ),
     );
   }

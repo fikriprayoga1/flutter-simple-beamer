@@ -2,8 +2,8 @@ import 'package:beamer/beamer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_simple_beamer/view_home.dart';
 
-class HomeLocation extends BeamLocation<BeamState> {
-  HomeLocation(RouteInformation routeInformation) : super(routeInformation);
+class BeamerLocation extends BeamLocation<BeamState> {
+  BeamerLocation(RouteInformation routeInformation) : super(routeInformation);
   @override
   List<String> get pathPatterns => [
         '/',
