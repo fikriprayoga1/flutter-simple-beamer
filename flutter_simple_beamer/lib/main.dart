@@ -19,6 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.blue),
       routeInformationParser: BeamerParser(),
       routerDelegate: BeamerDelegate(
+        transitionDelegate: const NoAnimationTransitionDelegate(),
         locationBuilder: (routeInformation, _) =>
             BeamerLocation(routeInformation),
       ),
